@@ -1,0 +1,64 @@
+{
+  "name": "react-infscroll-lazyload",
+  "version": "0.0.6",
+  "private": false,
+  "main": "./dist/main.js",
+  "homepage": "https://github.com/stevelagarto/inifinite-scroll-with-lazy-load#readme",
+  "keywords": [
+    "infinite scroll",
+    "scroll",
+    "react",
+    "lazy load",
+    "lazyload"
+  ],
+  "dependencies": {
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.0",
+    "@babel/preset-react": "^7.8.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.4.0",
+    "@testing-library/user-event": "^7.2.1",
+    "css-loader": "^3.4.2",
+    "eslint": "^6.8.0",
+    "eslint-plugin-json": "^1.4.0",
+    "extract-loader": "^3.1.0",
+    "gulp": "^4.0.2",
+    "gulp-eslint": "^5.0.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-replace": "^1.0.0",
+    "handlebars-loader": "^1.7.1",
+    "husky": "2.3.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-loader-spinner": "^3.1.5",
+    "react-scripts": "3.3.0"
+  },
+  "peerDependencies": {
+    "uuid": "^3.3.3",
+    "react": "^16.12.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "webpack",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
