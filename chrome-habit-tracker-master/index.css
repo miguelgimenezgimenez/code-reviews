@@ -1,0 +1,185 @@
+:root {
+  font-size: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #47525E;
+}
+body {
+  background-color: #F3F1EC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+.main-title {
+  text-decoration: underline;
+  width: 70%;
+  margin-top: 20vh;
+  margin-bottom: 5vh;
+}
+.day {
+  height: 100%;
+  font-size: 1.4rem;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  line-height: normal;
+}
+.grid-main-container {
+  width: 70%;
+  display: grid;
+  grid-gap: 0px;
+  margin-bottom: 12px;
+}
+.habit-title, .month-title, .flex-month-container, .day {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.day {
+  justify-content: center;
+}
+.flex-add-habit-container {
+  width: 70%;
+}
+.flex-month-container, .flex-day-container, .checks-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-month-container, .month-title {
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+}
+.habit-title, .day, .habit-container, .check-container {
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.flex-add-habit-container {
+  display: flex;
+  align-items: center;
+}
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  font-size: 1.4rem;
+  color: #47525E;
+  font-weight: 800;
+  outline: none;
+  cursor: pointer;
+}
+.selected-month {
+  background-color: #FFD185;
+  padding: 2px;
+  height: 100%;
+  align-self: center;
+}
+.habit {
+  font-size: 1.6rem;
+  align-self: center;
+  position: absolute;
+}
+input {
+  margin: 0px;
+}
+.actual-day {
+  background-color: #FFD185;
+  padding: 2px;
+}
+.remove-habit {
+  left: -7px;
+  position: relative;
+  opacity: 0;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.habit-container {
+  display: flex;
+  align-items: center;
+}
+.month {
+  cursor: pointer;
+  display: flex;
+  align-content: center;
+}
+.habit-input-container {
+  width: 70%;
+  display: none;
+}
+.habit-input {
+  background-color: #F3F1EC;
+  outline: none;
+  border: hidden;
+  width: 220px;
+  font-size: 1.6rem;
+  color: #47525E;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.last-one {
+  border-right: 1px solid;
+}
+.first-one {
+  border-left: 1px solid;
+}
+.check-container {
+  border-left: 1px solid;
+  display: flex;
+  justify-content: center;
+}
+.check {
+  display: none;
+}
+.check-container label::before {
+  content: '';
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  border: 1px solid;
+}
+.check-container label::after {
+  content: '';
+  display: inline-block;
+  height: 6px;
+  width: 9px;
+  border-color: #FFD185;
+  border-left: 2px solid;
+  border-bottom: 2px solid;
+  transform: rotate(-45deg);
+}
+.check-container label {
+  position: relative;
+}
+.check-container label::before {
+  position: relative;
+  margin: 0 auto;
+}
+.check-container label::after {
+    position: absolute;
+    border-color: #00A6FF;
+
+}
+/*Outer-box*/
+.check-container label::before {
+    top: 3px;
+}
+/*Checkmark*/
+.check-container label::after {
+    left: 4px;
+    top: 7px;
+}
+/*Hide the checkmark by default*/
+.check-container .check + label::after {
+  content: none;
+}
+/*Unhide the checkmark on the checked state*/
+.check-container .check:checked + label::after {
+  content: "";
+}
+/*Adding focus styles on the outer-box of the fake checkbox*/
+.check-container input.check:focus + label::before {
+  outline: rgb(59, 153, 252) auto 5px;
+}
