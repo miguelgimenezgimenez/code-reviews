@@ -1,0 +1,5 @@
+{
+  "env": {
+    "MONGO_URL": "@mongo-url" // this will be specified on the cli when i dowload zeit
+  }
+}
