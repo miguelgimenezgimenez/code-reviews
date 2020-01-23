@@ -1,0 +1,25 @@
+{
+  "name": "Habit Tracker",
+
+  "version": "1.2",
+
+  "description": "Add personal habits based on your goals and keep track of them.",
+
+  "manifest_version": 2,
+
+  "incognito": "split",
+
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+
+  "permissions": [
+     "activeTab",
+     "storage"
+   ],
+
+   "icons": {
+     "16": "icon16.png",
+      "48": "icon48.png",
+    "128": "icon128.png" }
+}
